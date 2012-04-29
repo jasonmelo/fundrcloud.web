@@ -13,13 +13,9 @@ require("./lib/express-config.coffee")(app, __dirname);
 var root = require("./routes/root")
     , modeler = require("./routes/modeler");
 
-app.get('/modeler',     modeler.featured);
-app.get('/modeler/:id', modeler.index);
+app.get('/modeler', modeler.featured);
 
-app.get('/api/modeler/type/:type',  modeler.interviewsByType);
-app.get('/api/modeler/:id',  modeler.getInterview);
-
-app.all('/',  modeler.featured);
+app.all('/',        root.index);
 
 //
 // Server Listener
