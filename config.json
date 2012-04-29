@@ -1,0 +1,6 @@
+{
+    "local": {
+        "mongoServer" : "localhost",
+        "mongoStore"  : "Citiology"
+    }
+}

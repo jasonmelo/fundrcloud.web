@@ -1,0 +1,26 @@
+{
+  "name": "Citiology",
+  "version": "3.0.3",
+  "engines": {
+    "node": "0.6.13",
+    "npm":  "1.1.x"
+  },
+  "dependencies": {
+    "nib": "latest",
+    "underscore": "latest",
+    "bootstrap-stylus": "latest",
+    "coffee-script": ">= 1.1.1 < 2.0.0",
+    "connect": "latest",
+    "snockets": "latest",
+    "connect-assets": ">= 2.0.0 < 3.0.0",
+    "express": ">= 2.0.0 < 3.0.0",
+    "jade": "latest",
+    "memcached": "latest",
+    "mongoose": "latest",
+    "stylus": ">= 0.22.0 < 1.0.0",
+    "backbone": "latest",
+    "rss": "latest",
+    "moment": "latest",
+    "validator": "latest"
+  }
+}
