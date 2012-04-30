@@ -1,7 +1,7 @@
 !!! 5
 html(lang='en')
-head
-  meta(charset='utf-8')
+  head
+    meta(charset='utf-8')
     title #{title} | If I Invest
 
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
@@ -29,7 +29,9 @@ head
             span.icon-bar
           a.brand(href='../') Bootswatch
           .nav-collapse
+
     .container
+
       //
          Masthead
       header#overview.jumbotron.subhead
@@ -47,6 +49,7 @@ head
               a(href='#forms') Forms
             li
               a(href='#miscellaneous') Miscellaneous
+
       //
          Typography
       section#typography
@@ -55,6 +58,9 @@ head
         //
            Headings & Paragraph Copy
         .row
+
+          block content
+
           .span4
             .well
               h1 h1. Heading 1

@@ -1,5 +1,5 @@
 
 exports.index = (req, res) ->
-  res.render 'index'
+  res.render 'root/index'
     title: 'Home'
     req: req
