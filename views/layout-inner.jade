@@ -1,25 +1,18 @@
 !!! 5
 html(lang='en')
-head
-  meta(charset='utf-8')
-    title #{title} | If I Invest
+  head
+    meta(charset='utf-8')
+    title #{title} | Fundtradr
 
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='')
     meta(name='author', content='')
-    //
-       Le HTML5 shim, for IE6-8 support of HTML elements
+
     //if lt IE 9
       script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
-    //
-       Le styles
-    != css('bootstrap.min.css')
-    != css('bootstrap-responsive.min.css')
-    != css('docs.css')
+
     != css('site')
   body(data-spy='scroll', data-target='.subnav', data-offset='50')
-    //
-       Navbar
     .navbar.navbar-fixed-top
       .navbar-inner
         .container
@@ -27,26 +20,60 @@ head
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.brand(href='../') Bootswatch
+          a.brand(href='#') Fundtradr
           .nav-collapse
-    .container
+            ul.nav
+              li.active
+                a(href='#') Home
+              li
+                a(href='#') Link
+              li
+                a(href='#') Link
+              li
+                a(href='#') Link
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | Dropdown
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another action
+                  li
+                    a(href='#') Something else here
+                  li.divider
+                  li
+                    a(href='#') Separated link
+            form.navbar-search.pull-left(action='')
+              input.search-query.span2(type='text', placeholder='Search')
+            ul.nav.pull-right
+              li
+                a(href='#') Link
+              li.divider-vertical
+              li.dropdown
+                a.dropdown-toggle(href='#', data-toggle='dropdown')
+                  | Dropdown
+                  b.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a(href='#') Another action
+                  li
+                    a(href='#') Something else here
+                  li.divider
+                  li
+                    a(href='#') Separated link
+
+
+    .container.body-content
       //
          Masthead
       header#overview.jumbotron.subhead
-        h1 Cyborg
-        p.lead A preview of changes in this swatch.
-        .subnav
-          ul.nav.nav-pills
-            li
-              a(href='#typography') Typography
-            li
-              a(href='#navbar') Navbar
-            li
-              a(href='#buttons') Buttons
-            li
-              a(href='#forms') Forms
-            li
-              a(href='#miscellaneous') Miscellaneous
+        h1 Fundtradr
+        p.lead Model your investments to drive your wealth.
+
       //
          Typography
       section#typography
@@ -55,6 +82,9 @@ head
         //
            Headings & Paragraph Copy
         .row
+
+          block content
+
           .span4
             .well
               h1 h1. Heading 1
@@ -84,69 +114,8 @@ head
               strong Full Name
               br
               a(href='mailto:#') first.last@gmail.com
-      //
-         Navbar
-      section#navbar
-        .page-header
-          h1 Navbar
-        .navbar
-          .navbar-inner
-            .container(style='width: auto;')
-              a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
-                span.icon-bar
-                span.icon-bar
-                span.icon-bar
-              a.brand(href='#') Project name
-              .nav-collapse
-                ul.nav
-                  li.active
-                    a(href='#') Home
-                  li
-                    a(href='#') Link
-                  li
-                    a(href='#') Link
-                  li
-                    a(href='#') Link
-                  li.dropdown
-                    a.dropdown-toggle(href='#', data-toggle='dropdown')
-                      | Dropdown
-                      b.caret
-                    ul.dropdown-menu
-                      li
-                        a(href='#') Action
-                      li
-                        a(href='#') Another action
-                      li
-                        a(href='#') Something else here
-                      li.divider
-                      li
-                        a(href='#') Separated link
-                form.navbar-search.pull-left(action='')
-                  input.search-query.span2(type='text', placeholder='Search')
-                ul.nav.pull-right
-                  li
-                    a(href='#') Link
-                  li.divider-vertical
-                  li.dropdown
-                    a.dropdown-toggle(href='#', data-toggle='dropdown')
-                      | Dropdown
-                      b.caret
-                    ul.dropdown-menu
-                      li
-                        a(href='#') Action
-                      li
-                        a(href='#') Another action
-                      li
-                        a(href='#') Something else here
-                      li.divider
-                      li
-                        a(href='#') Separated link
-              //
-                 /.nav-collapse
-          //
-             /navbar-inner
-        //
-           /navbar
+
+
       //
          Buttons
       section#buttons
@@ -598,3 +567,8 @@ head
        /container
 
     block pagescript
+
+
+
+
+
