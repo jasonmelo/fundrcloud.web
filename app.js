@@ -16,6 +16,7 @@ var root = require("./routes/root")
 app.get('/modeler', modeler.featured);
 
 app.all('/',        root.index);
+app.all('/template',root.template);
 
 //
 // Server Listener
