@@ -1,8 +1,8 @@
 {
-  "name": "Citiology",
-  "version": "3.0.3",
+  "name": "IfIInvest.Web",
+  "version": "0.0.1",
   "engines": {
-    "node": "0.6.13",
+    "node": "0.6.x",
     "npm":  "1.1.x"
   },
   "dependencies": {
@@ -10,16 +10,13 @@
     "underscore": "latest",
     "bootstrap-stylus": "latest",
     "coffee-script": ">= 1.1.1 < 2.0.0",
-    "connect": "latest",
-    "snockets": "latest",
-    "connect-assets": ">= 2.0.0 < 3.0.0",
-    "express": ">= 2.0.0 < 3.0.0",
+    "connect-assets": "latest",
+    "express": "latest",
     "jade": "latest",
     "memcached": "latest",
+    "redis": "latest",
     "mongoose": "latest",
-    "stylus": ">= 0.22.0 < 1.0.0",
-    "backbone": "latest",
-    "rss": "latest",
+    "stylus": "latest",
     "moment": "latest",
     "validator": "latest"
   }
