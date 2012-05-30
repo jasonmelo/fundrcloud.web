@@ -1,6 +1,5 @@
 config = require('../config.coffee')
 express = require('express')
-mongoDb = require('./mongodb-store')
 
 module.exports = (app, rootDir) ->
   app.configure ->
@@ -21,10 +20,6 @@ module.exports = (app, rootDir) ->
     app.use express.cookieParser()
     app.use express.session
       secret: "998dsfN98fdndf89snsdfnfsdsdf98sdf89hSFDh8sdfSADG68gSDR"
-
-    global.SERVER_NAME = 'citiology:jester@ds029317.mongolab.com:29317'
-    global.DB_NAME = 'citiologyweb'
-    mongoDb.init()
 
     app.use app.router
 

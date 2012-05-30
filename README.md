@@ -1,4 +1,4 @@
-Ifiinvest.Web
+Fundrcloud.Web
 =============
 
-Web Application for Ifiinvest.com (aka Fundtradr)
+Web Application for Fundrcloud

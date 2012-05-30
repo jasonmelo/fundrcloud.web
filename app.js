@@ -13,10 +13,18 @@ require("./lib/express-config.coffee")(app, __dirname);
 var root = require("./routes/root")
     , modeler = require("./routes/modeler");
 
-app.get('/modeler', modeler.featured);
+app.get('/modeler', modeler.index);
 
 app.all('/',        root.index);
 app.all('/template',root.template);
+
+//
+// Init MongoDB & Redis
+global.SERVER_NAME = 'citiology:jester@ds029317.mongolab.com:29317';
+global.DB_NAME = 'citiologyweb';
+
+var mongo = require("./lib/mongodb-store");
+mongo.init();
 
 //
 // Server Listener
