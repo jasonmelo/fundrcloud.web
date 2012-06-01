@@ -4,7 +4,12 @@
 #= require ./libs/underscore
 #= require ./libs/backbone
 #= require ./libs/moment.min
+
 #= require ./common/namespace
+
+#= require ./common/ft.notification-view
+#= require ./common/ui-interactions
+#= require ./common/view-loader
 
 #= require ./modeler/modeler-appview
 #= require ./modeler/modeler-models

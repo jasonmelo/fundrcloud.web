@@ -5,24 +5,23 @@ namespace 'ft', (exports) ->
     routes:
       "":                   "modeler"
       "modeler":            "modeler"
-      "modeler/:id":        "showModel"
-      "modeler/:id/:page":  "showModel"
+      "modeler/:id":        "showModeler"
+      "modeler/:id/:page":  "showModeler"
 
     initialize: ->
-      @bbEvent = _.extend({}, Backbone.Events)
-      @viewLoader = new ft.ViewLoader()
+      @eventagr = _.extend({}, Backbone.Events)
+      @viewloader = new ft.ViewLoader()
+      Backbone.history.start {pushState: true}
 
-      if not Backbone.history.start {pushState: true}
-        @navigate("buyer", true)
+    modeler: ->
+      new ft.NewModelerView
+        el: "#modeler-view"
+        eventagr: @eventagr
+        viewloader: @viewloader
 
-    buyer: ->
-      view = new ln.BuyerView()
-      $("#buyer-content").html view.render().el
-
-    showDeal: (id, page) ->
-      dealView = new ln.BuyerDealView
-        el: "#deal-view"
-        bbEvent: @bbEvent
-        viewLoader: @viewLoader
-      dealView.showPage(id, page)
+    showModeler: (id, page) ->
+      new ft.ModelerView
+        el: "#modeler-view"
+        eventagr: @eventagr
+        viewloader: @viewloader
 
