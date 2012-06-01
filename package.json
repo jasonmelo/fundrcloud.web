@@ -13,7 +13,6 @@
     "connect-assets": "latest",
     "express": "latest",
     "jade": "latest",
-    "memcached": "latest",
     "redis": "latest",
     "mongoose": "latest",
     "stylus": "latest",

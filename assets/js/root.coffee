@@ -3,7 +3,7 @@
 #= require ./libs/underscore
 #= require ./libs/backbone
 #= require ./libs/bootstrap
-#= require ./namespace
+#= require ./common/namespace
 
 $ ->
   @

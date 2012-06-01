@@ -4,12 +4,12 @@
 #= require ./libs/underscore
 #= require ./libs/backbone
 #= require ./libs/moment.min
-#= require ./namespace
-#= require ./app.js
-#= require ./widgets/interview-more
-#= require ./widgets/playlist-more
+#= require ./common/namespace
+
+#= require ./modeler/modeler-appview
+#= require ./modeler/modeler-models
+#= require ./modeler/modeler-router
 
 $ ->
-  new citi.MoreInterviewsView()
-  new citi.MorePlaylistsView()
+  new ft.ModelerRouter()
   @
