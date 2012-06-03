@@ -8,5 +8,13 @@ block pagescript
 
 block content
   .well
-    h3 If I Inevest X
+    .form-search
+      span.ifiinvest-label
+        | If I Invest
+      .ifiinvest-entry.input-prepend.inline
+        span.add-on $
+        input.input-small(type="text", placeholder="1000.00")
+      a#trigger-modeling.btn.btn-success(href="#")
+        | model investment
+
     #modeler-chart-main

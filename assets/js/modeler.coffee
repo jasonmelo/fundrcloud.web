@@ -31,8 +31,8 @@ $ ->
     bottom: 20
     left: 40
 
-  width = 960 - margin.left - margin.right
-  height = 500 - margin.top - margin.bottom
+  width = 760 - margin.left - margin.right
+  height = 400 - margin.top - margin.bottom
   x = d3.scale.linear().domain([ 0, 1 ]).range([ 0, width ])
   y = d3.scale.linear().domain([ 0, 1 ]).range([ height, 0 ])
   xAxis = d3.svg.axis().scale(x).orient("bottom")
